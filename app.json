@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/meeting",
     "pages/meeting/meeting",
     "pages/agendalist/agendalist",
     "pages/material/material",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,5 +13,44 @@
     "navigationBarTitleText": "会议系统",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/meeting/meeting",
+        "iconPath": "image/meeting-off.png",
+        "selectedIconPath": "image/meeting-on.png",
+        "text": "会议"
+      },
+      {
+        "pagePath": "pages/agendalist/agendalist",
+        "iconPath": "image/agenda-off.png",
+        "selectedIconPath": "image/agenda-on.png",
+        "text": "议程"
+      },
+      {
+        "pagePath": "pages/material/material",
+        "iconPath": "image/material-off.png",
+        "selectedIconPath": "image/material-on.png",
+        "text": "资料"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "image/mine-off.png",
+        "selectedIconPath": "image/mine-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wx478373945bfbbb7c"
+  ]
 }

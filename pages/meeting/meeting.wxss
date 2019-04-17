@@ -1,1 +1,77 @@
-/* pages/meeting/meeting.wxss */
+.rowHead{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.headImg{
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.headText{
+  position: absolute;
+  width: 675rpx;
+  height: 5%;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0.08em;
+  left:3%;
+  top:1.3%;
+}
+
+.headContent{
+  position: absolute;
+  font-family: Songti;
+  color: #FFFFFF;
+  letter-spacing: 0.15em;
+  margin-left:378rpx;
+  margin-top:-175rpx;
+}
+
+.middleContent{
+  height: 24%;
+}
+
+.leftView{
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  padding: 4rpx;
+  float: left;
+}
+
+.bmch{
+  height: 280rpx;
+  width: 370rpx;
+}
+
+.rightView{
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50;
+  padding: 4rpx;
+  float: left;
+}
+
+.zsap{
+  height: 140rpx;
+  width: 365rpx;
+}
+
+.ycap{
+  height: 140rpx;
+  width: 365rpx;
+}

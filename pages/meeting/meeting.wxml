@@ -1,2 +1,24 @@
-<!--pages/meeting/meeting.wxml-->
-<text>pages/meeting/meeting.wxml</text>
+
+<view class="rowHead">
+  <image class="headImg" src="/image/head.png"></image>
+  <view class="headText">
+    <p>您好，<span style="color: #ffc900;">张三</span>欢迎参加认证认可食品安全会议</p>
+  </view>
+  <view class="headContent">
+    <p>智能会议系统</p>
+  </view>
+</view>
+
+<view class="middleContent">
+  <view class="leftView">
+    <image class="bmch" src="/image/bmch.png"></image>
+  </view>
+  <view class="rightView">
+    <view>
+      <image class="zsap" src="/image/zsap.png"></image>
+    </view>
+    <view>
+      <image class="ycap" src="/image/ycap.png"></image>
+    </view>
+  </view>
+</view>
