@@ -1,0 +1,22 @@
+<view class="container"> 
+
+ <view class="login-from"> 
+ 
+ <!--账号--> 
+ <view class="inputView"> 
+  <input class="inputText" type="number" maxlength="11" placeholder="手机号" bindinput="phoneInput" /> 
+ </view> 
+ 
+ 
+ <!--密码--> 
+ <view class="inputView"> 
+  <input class="inputMaText" password="true" placeholder="验证码" bindinput="passwordInput"/> 
+  <button class="yanzhen">获取验证码</button>
+ </view> 
+ 
+ <!--按钮--> 
+ <view class="loginBtnView"> 
+  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button> 
+ </view> 
+ </view> 
+</view>

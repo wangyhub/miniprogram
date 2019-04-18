@@ -5,7 +5,9 @@
     "pages/material/material",
     "pages/mine/mine",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/bindMeeting/bindMeeting"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,7 +17,7 @@
   },
   "tabBar": {
     "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "selectedColor": "#488aff",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
@@ -52,5 +54,6 @@
   "debug": true,
   "navigateToMiniProgramAppIdList": [
     "wx478373945bfbbb7c"
-  ]
+  ],
+  "sitemapLocation": "sitemap.json"
 }

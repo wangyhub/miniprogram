@@ -2,14 +2,23 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
+    //var logs = wx.getStorageSync('logs') || []
+    //logs.unshift(Date.now())
+    //wx.setStorageSync('logs', logs)
+    if(wx.getStorageSync('isLogin')){
+      wx.switchTab({
+        url: 'pages/meeting/meeting',
+      })
+    }else{
+      wx.reLaunch({
+        url: 'pages/login/login',
+      })
+    }
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        console.log(res.code);
       }
     })
     // 获取用户信息
@@ -34,6 +43,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    url: "http://39.155.223.208:9080/meeting/a/meeting/mobile/tbMobile"
   }
 })

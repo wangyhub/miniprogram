@@ -1,4 +1,4 @@
-// pages/meeting.js
+// pages/bindMeeting/bindMeeting.js
 Page({
 
   /**

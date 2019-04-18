@@ -1,24 +1,52 @@
-
-<view class="rowHead">
-  <image class="headImg" src="/image/head.png"></image>
-  <view class="headText">
-    <p>您好，<span style="color: #ffc900;">张三</span>欢迎参加认证认可食品安全会议</p>
-  </view>
-  <view class="headContent">
-    <p>智能会议系统</p>
-  </view>
-</view>
-
-<view class="middleContent">
-  <view class="leftView">
-    <image class="bmch" src="/image/bmch.png"></image>
-  </view>
-  <view class="rightView">
-    <view>
-      <image class="zsap" src="/image/zsap.png"></image>
+<view style="height:{{height}}px;width:{{width}}px;">
+  <view class="rowHead">
+    <image class="headImg" src="/image/head.png"></image>
+    <view class="headText">
+      <p>您好，<span style="color: #ffc900;">{{userName}}</span>欢迎参加{{meetingName}}</p>
     </view>
-    <view>
-      <image class="ycap" src="/image/ycap.png"></image>
+    <view class="headContent">
+      <p>智能会议系统</p>
     </view>
   </view>
+
+  <view class="middleContent">
+    <view class="leftView">
+      <image class="bmch" src="/image/bmch.png"></image>
+      <p class="characters" style="left:6%;top:40%;">报名参会</p>
+    </view>
+    <view class="rightView">
+      <view class="viewOn">
+        <image class="zsap" src="/image/zsap.png"></image>
+        <p class="characters" style="left:77%;top:42%;">住宿安排</p>
+      </view>
+      <view class="viewOn">
+        <image class="ycap" src="/image/ycap.png"></image>
+        <p class="characters" style="left:56.5%;top:54%;">用餐安排</p>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottomContent">
+    <view class="bottomLeft">
+      <view class="viewOn">
+        <image class="hczc" src="/image/hczc.png"></image>
+        <p class="characters" style="left:6%;top:66.5%;">会场座次</p>
+      </view>
+      <view class="viewIn">
+        <image class="xwdt" src="/image/xwdt.png"></image>
+        <p class="characters" style="left:6%;top:92%;">新闻动态</p>
+      </view>
+    </view>
+    <view class="bottomRight">
+      <view class="viewIn">
+        <image class="dhdt" src="/image/dhdt.png"></image>
+        <p class="characters" style="left:56.5%;top:80%;">大会地图</p>
+      </view>
+      <view class="viewOn">
+        <image class="jsfw" src="/image/jsfw.png"></image>
+        <p class="characters" style="left:77%;top:92%;">接送服务</p>
+      </view>
+    </view>
+  </view>
+  
 </view>
