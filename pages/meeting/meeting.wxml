@@ -28,7 +28,7 @@
 
   <view class="bottomContent">
     <view class="bottomLeft">
-      <view class="viewOn">
+      <view class="viewBottom">
         <image class="hczc" src="/image/hczc.png"></image>
         <p class="characters" style="left:6%;top:66.5%;">会场座次</p>
       </view>
@@ -38,11 +38,11 @@
       </view>
     </view>
     <view class="bottomRight">
-      <view class="viewIn">
+      <view class="viewIn" bindtap="goMap">
         <image class="dhdt" src="/image/dhdt.png"></image>
         <p class="characters" style="left:56.5%;top:80%;">大会地图</p>
       </view>
-      <view class="viewOn">
+      <view class="viewBottom">
         <image class="jsfw" src="/image/jsfw.png"></image>
         <p class="characters" style="left:77%;top:92%;">接送服务</p>
       </view>

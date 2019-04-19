@@ -28,12 +28,12 @@
 }
 
 .middleContent{
-  height: 24%;
+  height: 26%;
 }
 
 .leftView{
   height: 100%;
-  width: 49%;
+  width: 49.15%;
   float: left;
   padding-left: 4rpx;
   padding-top: 4rpx;
@@ -73,9 +73,8 @@
 }
 
 .bottomContent{
-  height: 36%;
+  height: 37%;
   padding: 4rpx;
-  margin-top: -4rpx;
 }
 
 .hczc{
@@ -97,23 +96,30 @@
 .jsfw{
   height: 100%;
   width: 100%;
+  margin-top: 4rpx;
 }
 
 .bottomLeft{
   float: left;
-  width: 49%;
+  width: 49.5%;
   height: 100%;
 }
 
 .bottomRight{
   float: left;
   margin-left: 4rpx;
-  width: 49%;
+  width: 49.9%;
   height: 100%;
 }
 
+.viewBottom{
+  height: 36%;
+  display: block;
+  width: 100%;
+}
+
 .viewIn{
-  height: 66%;
+  height: 64%;
   display: block;
   width: 100%;
 }
@@ -124,4 +130,10 @@
   font-size: 12px;
   color: #FFFFFF;
   letter-spacing: 0.1em;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }

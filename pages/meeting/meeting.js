@@ -34,5 +34,12 @@ Page({
       userName: name,
       meetingName: meeting,
     })
+  },
+
+  //跳转到大会地图页面
+  goMap: function (event){
+    wx.navigateTo({
+      url: '../meeting/map/map',
+    })
   }
 })

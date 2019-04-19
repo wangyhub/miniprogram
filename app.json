@@ -7,7 +7,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/login/login",
-    "pages/bindMeeting/bindMeeting"
+    "pages/bindMeeting/bindMeeting",
+    "pages/meeting/map/map"
   ],
   "window": {
     "backgroundTextStyle": "light",
