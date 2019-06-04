@@ -1,2 +1,7 @@
-<!--pages/material/material.wxml-->
-<text>pages/material/material.wxml</text>
+<view>
+  <view class="list" wx:for="{{file}}" wx:key="">
+    <image src="/image/file.png"></image>
+    <label>{{item.fileName}}</label>
+    <image class="load" src="/image/load.png" bindtap="downLoad" data-id="{{item.fileId}}"></image>
+  </view>
+</view>
