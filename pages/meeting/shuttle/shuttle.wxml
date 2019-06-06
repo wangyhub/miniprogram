@@ -1,0 +1,27 @@
+<view wx:for="{{tripList}}" wx:key="key">
+  <view class="list">
+    <span class="top">{{item.remark}}</span>
+    <image src="/image/shuttle/open.png"  bindtap="onChangeShowState" data-index="{{index}}"></image>
+  </view>
+  <view class="{{currentTabsIndex==index ? (showView?'show':'hide'):'show'}}">
+    <view class='content'>
+      <image src="/image/shuttle/clock.png"></image>
+      <span>{{item.tripTimeStr}}</span>
+    </view>
+    <view class='content'>
+      <image src="/image/shuttle/plane.png"></image>
+      <span>{{item.tripAddress}}</span>
+    </view>
+    <view class='content'>
+      <image src="/image/shuttle/car.png"></image>
+      <span>{{item.carModel}}</span>
+      <span>{{item.carNum}}</span>
+    </view>
+    <view class='content'>
+      <image src="/image/shuttle/phone.png"></image>
+      <span>{{item.carMan}}</span>
+      <span>{{item.manPhone}}</span>
+    </view>
+  </view>
+
+</view>

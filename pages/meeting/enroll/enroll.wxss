@@ -1,0 +1,55 @@
+.content_A{
+  height: 570rpx;
+}
+.content_B{
+  margin-top: 30rpx;
+  border-top: 0.5rpx solid #ddd;
+}
+.list{
+  height:80rpx;
+  width: 100%;
+  margin:0 auto;
+  border-bottom: 0.5rpx solid #ddd;
+}
+
+.list label{
+  padding-left: 40rpx;
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  line-height:80rpx;
+  float: left;
+}
+
+.list span{
+  font-size: 12px;
+  padding-left: 36px;
+  line-height:80rpx;
+  float: left;
+}
+
+.div_ipt{
+  float: left;
+  font-size: 12px;
+  height: 80rpx;
+  line-height:80rpx;
+}
+
+.div_ipt input{
+  height: 80rpx;
+  line-height:80rpx;
+}
+
+radio .wx-radio-input{ 
+  height: 40rpx; 
+  width: 40rpx;
+  border-radius: 50%;
+  border: 2rpx solid #999;
+  background: transparent;
+}
+
+/* 选中后radio的背景样式  */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: blue;
+}

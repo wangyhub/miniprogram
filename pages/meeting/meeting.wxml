@@ -10,16 +10,16 @@
   </view>
 
   <view class="middleContent">
-    <view class="leftView">
+    <view class="leftView" bindtap='goEnroll'>
       <image class="bmch" src="/image/bmch.png"></image>
       <p class="characters" style="left:6%;top:40%;">报名参会</p>
     </view>
     <view class="rightView">
-      <view class="viewOn">
+      <view class="viewOn" bindtap='goStay'>
         <image class="zsap" src="/image/zsap.png"></image>
         <p class="characters" style="left:77%;top:42%;">住宿安排</p>
       </view>
-      <view class="viewOn">
+      <view class="viewOn" bindtap='goMeals'>
         <image class="ycap" src="/image/ycap.png"></image>
         <p class="characters" style="left:56.5%;top:54%;">用餐安排</p>
       </view>
@@ -28,7 +28,7 @@
 
   <view class="bottomContent">
     <view class="bottomLeft">
-      <view class="viewBottom">
+      <view class="viewBottom" bindtap='goSeat'>
         <image class="hczc" src="/image/hczc.png"></image>
         <p class="characters" style="left:6%;top:66.5%;">会场座次</p>
       </view>
@@ -42,7 +42,7 @@
         <image class="dhdt" src="/image/dhdt.png"></image>
         <p class="characters" style="left:56.5%;top:80%;">大会地图</p>
       </view>
-      <view class="viewBottom">
+      <view class="viewBottom" bindtap="goShuttle">
         <image class="jsfw" src="/image/jsfw.png"></image>
         <p class="characters" style="left:77%;top:92%;">接送服务</p>
       </view>

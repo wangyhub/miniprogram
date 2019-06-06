@@ -1,0 +1,111 @@
+<view class='content_A'>
+  <view class="list">
+    <label>姓名*：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="text" placeholder="请输入姓名" /></view>
+    </view>
+  <view class="list">
+    <label>性别*：</label>
+    <view class='div_ipt'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}">
+          <radio value="{{item.name}}" name='con' checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="list">
+    <label>单位*：</label>
+    <view class='div_ipt'>
+        <picker bindchange="bindPickerChange2" value="{{objectIndex}}" range="{{objectArray}}"       range-key="name">
+        <view class="picker">
+          {{objectArray[objectIndex].name}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="list">
+    <label>职务*：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" type="text" placeholder="请输入职务" />
+    </view>
+  </view>
+  <view class="list">
+    <label>手机号*：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='11' type="mobile" placeholder="请输入11位手机号码" />
+    </view>
+  </view>
+  <view class="list">
+    <label>民族：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" type="text" placeholder="请输入民族" />
+    </view>
+  </view>
+  <view class="list">
+    <label>邮箱：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入邮箱" />
+    </view>
+  </view>
+</view>
+<view style='clear:both;'></view>
+<view class='content_B'>
+  <view class="list">
+    <label>是否接送：</label>
+    <view class='div_ipt'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{isOrNot}}">
+          <radio value="{{item.name}}" name='isjie' checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="list">
+    <label>是否住宿：</label>
+    <view class='div_ipt'>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{isOrNot}}">
+          <radio value="{{item.name}}" name='iszhu' checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class="list">
+    <label>到达航班号/车次：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航班号或车次" />
+    </view>
+  </view>
+  <view class="list">
+    <label>到达航站楼/车站：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航站楼或车站" />
+    </view>
+  </view>
+  <view class="list">
+    <label>预计到达时间：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请填写预计到达时间" />
+    </view>
+  </view>
+  <view class="list">
+    <label>返程航班号/车次：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航班号或车次" />
+    </view>
+  </view>
+  <view class="list">
+    <label>返程航站楼/车站：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航站楼或车站" />
+    </view>
+  </view>
+  <view class="list">
+    <label>预计返程时间：</label>
+    <view class='div_ipt'>
+      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入预计返程时间" />
+    </view>
+  </view>
+</view>

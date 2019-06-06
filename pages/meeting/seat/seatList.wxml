@@ -1,0 +1,9 @@
+<view class='list' wx:for="{{seatList}}" wx:key="{{key}}" bindtap='goSeatInfo' data-index='{{item.agendaId}}'>
+  <view class='left'>
+    <view class='title'>{{item.agendaName}}</view>
+    <view class='time'>{{item.beginDateStr}}~{{item.endDateStr}}</view>
+  </view>
+  <view class='right'>
+    <image src='/image/common/next.png'></image>
+  </view>
+</view>

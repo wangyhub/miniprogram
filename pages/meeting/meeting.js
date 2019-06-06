@@ -41,5 +41,40 @@ Page({
     wx.navigateTo({
       url: '../meeting/map/map',
     })
+  },
+
+  //跳转到接送服务页面
+  goShuttle: function (event){
+    wx.navigateTo({
+      url: '../meeting/shuttle/shuttle',
+    })
+  },
+
+  //跳转到住宿安排页面
+  goStay: function (event){
+    wx.navigateTo({
+      url: '../meeting/stay/stay',
+    })
+  },
+
+  //跳转到用餐安排页面
+  goMeals: function (event){
+    wx.navigateTo({
+      url: '../meeting/meals/meals',
+    })
+  },
+
+  //跳转到会场座次列表页面
+  goSeat: function (event){
+    wx.navigateTo({
+      url: '../meeting/seat/seatList',
+    })
+  },
+
+  //跳转到报名参会页面
+  goEnroll: function (event){
+    wx.navigateTo({
+      url: '../meeting/enroll/enroll',
+    })
   }
 })

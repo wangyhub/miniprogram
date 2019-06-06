@@ -8,7 +8,14 @@
     "pages/logs/logs",
     "pages/login/login",
     "pages/bindMeeting/bindMeeting",
-    "pages/meeting/map/map"
+    "pages/meeting/map/map",
+    "pages/meeting/shuttle",
+    "pages/meeting/shuttle/shuttle",
+    "pages/meeting/stay/stay",
+    "pages/meeting/meals/meals",
+    "pages/meeting/seat/seatList",
+    "pages/meeting/seat/seatInfo",
+    "pages/meeting/enroll/enroll"
   ],
   "window": {
     "backgroundTextStyle": "light",

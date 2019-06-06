@@ -1,0 +1,46 @@
+<view>
+
+  <view>
+    <view class="list">
+      <view class='first'>
+        时间
+      </view>
+      <span>{{seatInfo.startTimeStr}}~{{seatInfo.endTimeStr}}</span>
+    </view>
+    <view class="list">
+      <view class='first'>
+        主题
+      </view>
+      <span>{{seatInfo.subject}}</span>
+    </view>
+    <view class="list">
+      <view class='first'>
+        地点
+      </view>
+      <span>{{seatInfo.placeAddress}}</span>
+    </view>
+    <view class="list">
+      <view class='first'>
+        您的座位
+      </view>
+      <span>第3排第8号</span>
+    </view>
+  </view>
+  <view class='stage'>
+    <view class='seat' wx:for="{{platform}}" wx:key="{{key}}">{{index+1}}</view>
+  </view>
+  
+ <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+  <view  class='seat_list' style='width:{{77*(count_cell.length)}}rpx;'  wx:for="{{count_row}}" wx:key="{{key}}" wx:for-item="row" wx:for-index="row_index">
+        <view wx:for="{{count_cell}}" wx:key="{{key}}" wx:for-item="cell" wx:for-index="cell_index"
+          class="{{((row_index+1)==seat_row && cell==seat_cell) ? 'yellow':(cell=='') ? 'empty':'seat01'}}"
+          >
+            {{cell}}
+        </view>
+         <view class='clear'></view>
+      </view>
+     
+</scroll-view>
+
+
+</view>

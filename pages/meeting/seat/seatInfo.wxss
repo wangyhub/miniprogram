@@ -1,0 +1,93 @@
+.list{
+  height:80rpx;
+  width: 90%;
+  margin:0 auto;
+  border-bottom: 0.5rpx solid #ddd;
+}
+
+.first{
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  line-height:80rpx;
+  width: 120rpx;
+  float: left;
+}
+
+.list span{
+  font-size: 12px;
+  line-height:80rpx;
+  float: left;
+}
+
+.scroll_box{
+width: 100%;
+height: 307rpx;
+overflow: hidden;
+padding: 20rpx;
+background: #fff;
+white-space: nowrap;
+}
+.item_list{
+width: 160rpx;
+height: auto;
+margin-right: 23rpx;
+display: inline-block;
+}
+
+.stage{
+  margin:30rpx auto;   
+  height: 100rpx;
+  width: 700rpx;
+}
+
+.seat_list{
+  margin-bottom: 12rpx;
+}
+.seat{
+  height: 60rpx;
+  width: 60rpx;
+  background-color: greenyellow;
+  float: left;
+  margin-left: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 14px;
+}
+
+.seat01{
+  height: 60rpx;
+  width: 60rpx;
+  background-color: greenyellow;
+  float: left;
+  margin-left: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 14px;
+}
+
+.empty{
+  height: 60rpx;
+  width: 60rpx;
+  background-color: #fff;
+  float: left;
+  margin-left: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 14px;
+}
+
+.yellow{
+  height: 60rpx;
+  width: 60rpx;
+  background-color: yellow;
+  float: left;
+  margin-left: 16rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 14px;
+}
+
+.clear{
+  clear:both;
+}

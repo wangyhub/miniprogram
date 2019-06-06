@@ -1,0 +1,21 @@
+
+<view wx:for="{{mealList}}" wx:key="key">
+  <view class="list">
+    <span class="top">{{item.mealTimeDay}}  {{item.mealType}}</span>
+    <image src="/image/shuttle/open.png"  bindtap="onChangeShowState" data-index="{{index}}"></image>
+  </view>
+  <view class="{{currentTabsIndex==index ? (showView?'show':'hide'):'hide'}}">
+    <view class='content'>
+      <label>时间</label>
+      <span>{{item.mealTime}}</span>
+    </view>
+    <view class='content'>
+      <label>地点</label>
+      <span>{{item.mealName}} {{item.mealAddress}}</span>
+    </view>
+    <view class='content'>
+      <label>桌号</label>
+      <span>{{item.tableNum}}</span>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+.list{
+  background-color: #f5f5f5;
+  color: #222;
+  height:60rpx;
+  margin:0 auto;
+}
+
+.top{
+  font-size: 14px;
+  padding-left: 16px;
+  line-height:60rpx;
+}
+
+.list image{
+  height: 50rpx;
+  width: 50rpx;
+  float: right;
+  margin-top: 8rpx;
+  padding-right: 10px;
+}
+
+.content{
+  height:80rpx;
+  width: 100%;
+  margin:0 auto;
+  border-bottom: 0.5rpx solid #ddd;
+}
+
+.content label{
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  line-height:80rpx;
+  padding-left: 20px;
+}
+
+.content span{
+  font-size: 14px;
+  padding-left: 30px;
+  line-height:80rpx;
+}
+
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

@@ -1,0 +1,40 @@
+<view>
+  <view>
+    <view class="list">
+      <label>名称</label>
+      <span>{{stayInfo.hotelName}}</span>
+    </view>
+    <view class="list">
+      <label>地址</label>
+      <span>{{stayInfo.hotelAddress}}</span>
+    </view>
+    <view class="list">
+      <label>入住</label>
+      <span>{{stayInfo.stayTimeStr}}</span>
+    </view>
+    <view class="list">
+      <label>离店</label>
+      <span>{{stayInfo.leaveTimeStr}}</span>
+    </view>
+    <view class="list">
+      <label>电话</label>
+      <span>{{stayInfo.hotelPhone}}</span>
+    </view>
+    <view class="message">
+      <label>入住须知</label>
+      <view class='info'>{{stayInfo.stayNotice}}</view>
+    </view>
+  </view>
+  <view style='height:50rpx;'></view>
+  <map
+    id="map"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="17"
+    bindcontroltap="controltap"
+    bindmarkertap="markertap"
+    bindregionchange="regionchange"
+    style="width: 100%; height: 300px;"
+    markers="{{markers}}"
+  ></map>
+</view>
