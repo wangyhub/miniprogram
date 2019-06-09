@@ -1,0 +1,49 @@
+.newsList{
+  background-color: #fff;
+}
+
+.news{
+  height:180rpx;
+  width: 100%;
+  margin:0 auto;
+  border-bottom: 0.5rpx solid #ddd;
+}
+
+.news_left{
+  height: 120rpx;
+  width: 464rpx;
+  float: left;
+  margin-left: 36rpx;
+  padding-right: 36rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.title{
+  height: 60rpx;
+  line-height: 45rpx;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.title label{
+  padding-top: 20rpx;
+}
+
+.time{
+  height: 60rpx;
+  line-height: 90rpx;
+  font-size: 12px;
+}
+
+.news_right{
+  height: 180rpx;
+  width: 186rpx;
+  float: left;
+}
+
+.news_right image{
+  height:140rpx; 
+  width: 186rpx;
+  margin-top: 20rpx;
+}

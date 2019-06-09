@@ -22,11 +22,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)//可以打印一下option看查看参数
     var url = getApp().globalData.url;
     var id = options.agendaId;
     var userId = wx.getStorageSync('userId');
-    console.log("userId=" + userId)//可以打印一下option看查看参数
     var that = this;
     wx.request({
       url: url + '/seatDetails?callback=JSONP_CALLBACK',

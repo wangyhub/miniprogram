@@ -1,0 +1,21 @@
+.news_title{
+  height: 80rpx;
+  width: 100%;
+  line-height: 60rpx;
+  margin-top: 24rpx;
+  font-size: 18px;
+  font-weight:800;
+  text-align:center;
+}
+
+.news_time{
+  height: 50rpx;
+  width: 100%;
+  font-size: 12px;
+  color: #bbb;
+  text-align: right;
+}
+
+.time_con{
+  margin-right: 50rpx;
+}

@@ -76,5 +76,12 @@ Page({
     wx.navigateTo({
       url: '../meeting/enroll/enroll',
     })
+  },
+
+  //跳转到新闻列表页面
+  goNews: function (event){
+    wx.navigateTo({
+      url: '../meeting/news/news',
+    })
   }
 })

@@ -1,111 +1,136 @@
-<view class='content_A'>
-  <view class="list">
-    <view class="first1">姓名*：</view>
-    <view class='div_ipt1'>
-      <input id="username" name="username" maxlength='4' type="text" placeholder="请输入姓名" /></view>
-    </view>
-  <view class="list">
-    <view class="first">性别*：</view>
-    <view class='div_ipt'>
-      <radio-group class="radio-group" bindchange="radioChange">
-        <label class="radio" wx:for="{{items}}">
-          <radio value="{{item.name}}" name='con' checked="{{item.checked}}"/>{{item.value}}
-        </label>
-      </radio-group>
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">单位*：</view>
-    <view class='div_ipt'>
-        <picker bindchange="bindPickerChange2" value="{{objectIndex}}" range="{{objectArray}}"       range-key="name">
-        <view class="picker">
-          {{objectArray[objectIndex].name}}
-        </view>
-      </picker>
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">职务*：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" type="text" placeholder="请输入职务" />
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">手机号*：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='11' type="mobile" placeholder="请输入11位手机号码" />
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">民族：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" type="text" placeholder="请输入民族" />
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">邮箱：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入邮箱" />
-    </view>
-  </view>
-</view>
-<view style='clear:both;'></view>
-<view class='content_B'>
-  <view class="list">
-    <view class="first">是否接送：</view>
-    <view class='div_ipt'>
-      <radio-group class="radio-group" bindchange="radioChange">
-        <label class="radio" wx:for="{{isOrNot}}">
-          <radio value="{{item.name}}" name='isjie' checked="{{item.checked}}"/>{{item.value}}
-        </label>
-      </radio-group>
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">是否住宿：</view>
-    <view class='div_ipt'>
-      <radio-group class="radio-group" bindchange="radioChange">
-        <label class="radio" wx:for="{{isOrNot}}">
-          <radio value="{{item.name}}" name='iszhu' checked="{{item.checked}}"/>{{item.value}}
-        </label>
-      </radio-group>
-    </view>
-  </view>
 
-  <view class="list">
-    <view class="first">到达航班号/车次：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航班号或车次" />
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='content_A'>
+    <view class="list">
+      <view class="first">姓名*：</view>
+      <view class='div_ipt'>
+        <input name="userName" value="{{join.userName}}" maxlength='4' type="text" placeholder="请输入姓名" /></view>
+      </view>
+    <view class="list">
+      <view class="first">性别*：</view>
+      <view class='div_ipt'>
+        <radio-group class="radio-group" bindchange="radioChange"  name='sex'>
+          <label class="radio" wx:for="{{items}}" wx:key="key">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="list">
+      <view class="first">单位*：</view>
+      <view class='div_ipt'>
+          <picker bindchange="bindPickerChange2" value="{{objectIndex}}" range="{{departmentArray}}" range-key="companyName">
+          <view class="picker">
+            {{departmentArray[objectIndex].companyName}}
+            <input type="text" hidden="true" name='companyId' value='{{departmentArray[objectIndex].companyId}}'/>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="list">
+      <view class="first">职务*：</view>
+      <view class='div_ipt'>
+        <input name="position" value='{{join.position}}' type="text" placeholder="请输入职务" />
+      </view>
+    </view>
+    <view class="list">
+      <view class="first">手机号*：</view>
+      <view class='div_ipt'>
+        <input name="phone" value='{{join.phone}}' type="text" maxlength='11' placeholder="请输入11位手机号码" />
+      </view>
+    </view>
+    <view class="list">
+      <view class="first">民族：</view>
+      <view class='div_ipt'>
+        <input name="nation" value='{{join.nation}}' type="text" placeholder="请输入民族" />
+      </view>
+    </view>
+    <view class="list">
+      <view class="first">邮箱：</view>
+      <view class='div_ipt'>
+        <input name="email" value='{{join.email}}' type="text" maxlength='26' placeholder="请输入邮箱" />
+      </view>
     </view>
   </view>
-  <view class="list">
-    <view class="first">到达航站楼/车站：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航站楼或车站" />
+  <view style='clear:both;'></view>
+  <view class='content_B'>
+    <view class="list">
+      <view class="first">是否接送：</view>
+      <view class='div_ipt'>
+        <radio-group class="radio-group" name='isSendStation' bindchange="radioChange02">
+          <label class="radio" wx:for="{{isOrNot}}" wx:key="key">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
     </view>
-  </view>
-  <view class="list">
-    <view class="first">预计到达时间：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请填写预计到达时间" />
+    <view class="list">
+      <view class="first">是否住宿：</view>
+      <view class='div_ipt'>
+        <radio-group class="radio-group" name='isLive' bindchange="radioChange">
+          <label class="radio" wx:for="{{isOrNot}}" wx:key="key">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
     </view>
-  </view>
-  <view class="list">
-    <view class="first">返程航班号/车次：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航班号或车次" />
+    <view class="{{(showSendInfo==1)?'show':'hide'}}">
+      <view class="list">
+        <view class="first">到达航班号/车次：</view>
+        <view class='div_ipt'>
+          <input name="comeNumber" value='{{join.comeNumber}}' maxlength='10' type="text" placeholder="请输入航班号或车次" />
+        </view>
+      </view>
+      <view class="list">
+        <view class="first">到达航站楼/车站：</view>
+        <view class='div_ipt'>
+          <input name="comeStation" value='{{join.comeStation}}' maxlength='10' type="text" placeholder="请输入航站楼或车站" />
+        </view>
+      </view>
+      <view class="list">
+        <view class="first">预计到达时间：</view>
+        <picker mode="multiSelector" value="{{join.comeTime1}}" bindchange="changeDateTime1" 
+                    bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+            <view class="div_ipt">
+              选择日期时间: {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}}                   {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          </view>
+        </picker>
+      </view>
+      <view class="list">
+        <view class="first">返程航班号/车次：</view>
+        <view class='div_ipt'>
+          <input name="goNumber" value='{{join.goNumber}}' maxlength='10' type="text" placeholder="请输入航班号或车次" />
+        </view>
+      </view>
+      <view class="list">
+        <view class="first">返程航站楼/车站：</view>
+        <view class='div_ipt'>
+          <input name="goStation" value='{{join.goStation}}' maxlength='10' type="text" placeholder="请输入航站楼或车站" />
+        </view>
+      </view>
+      <view class="list">
+        <view class="first">预计返程时间：</view>
+        <picker mode="multiSelector" value="{{join.goTime1}}" bindchange="changeDateTime1" 
+                    bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+            <view class="div_ipt">
+              选择日期时间: {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}}                   {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="list">
+        <view class="first">预计返程时间：</view>
+          <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" 
+                    bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+            <view class="div_ipt">
+              选择日期时间: {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}}                   {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+          </view>
+        </picker>
+      </view>
     </view>
+
+    <view class="loginBtnView"> 
+      <button class="loginBtn" type="primary" formType="submit">提交</button> 
+    </view> 
   </view>
-  <view class="list">
-    <view class="first">返程航站楼/车站：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入航站楼或车站" />
-    </view>
-  </view>
-  <view class="list">
-    <view class="first">预计返程时间：</view>
-    <view class='div_ipt'>
-      <input id="username" name="username" maxlength='4' type="email" placeholder="请输入预计返程时间" />
-    </view>
-  </view>
-</view>
+</form>

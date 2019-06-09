@@ -1,0 +1,11 @@
+<view class='newsList'>
+  <view class='news' wx:for="{{news}}" wx:key="{{key}}" bindtap='goNewsInfo' data-index='{{item.newsId}}'>
+    <view class='news_left'>
+      <view class='title'><label>{{item.title}}</label></view>
+      <view class='time'><span>发布时间：{{item.newsTime}}</span></view>
+    </view>
+    <view class='news_right'>
+      <image  src="{{item.titleImg}}"></image>
+    </view>
+  </view>
+</view>

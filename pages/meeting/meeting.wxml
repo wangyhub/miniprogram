@@ -32,7 +32,7 @@
         <image class="hczc" src="/image/hczc.png"></image>
         <p class="characters" style="left:6%;top:66.5%;">会场座次</p>
       </view>
-      <view class="viewIn">
+      <view class="viewIn" bindtap='goNews'>
         <image class="xwdt" src="/image/xwdt.png"></image>
         <p class="characters" style="left:6%;top:92%;">新闻动态</p>
       </view>

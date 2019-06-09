@@ -1,0 +1,14 @@
+<!--<view class='news_title'>
+  {{newsInfo.title}}
+</view>
+<view class='news_time'>
+  <view class='time_con'>
+    <text decode="{{true}}">{{newsInfo.issuer}}&ensp;&ensp;{{newsInfo.newsTime}}</text>
+  </view>
+</view>
+<view>
+  {{newInfo.content}}
+</view>
+-->
+
+<web-view src="{{url}}"></web-view>
